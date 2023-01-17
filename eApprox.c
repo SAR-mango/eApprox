@@ -55,4 +55,5 @@ int main (void) {
         // x, y, e^x, y - e^x, y^(1/x), y^(1/x) - e
         fprintf(fp, "%f %f %f %f %f %f\n", e_approx[i][0], e_approx[i][1], exp(e_approx[i][0]), e_approx[i][1] - exp(e_approx[i][0]), pow(e_approx[i][1], 1 / e_approx[i][0]), pow(e_approx[i][1], 1 / e_approx[i][0]) - M_E);
     }
+    return 0;
 }
