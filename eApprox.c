@@ -5,13 +5,13 @@
 #define RAD 0.01
 #define TOT_PTS 1000
 
-float quart_circ[CIRC_PTS - 2][2];
-float slopes[CIRC_PTS - 2];
-float e_approx[TOT_PTS][2];
+double quart_circ[CIRC_PTS - 2][2];
+double slopes[CIRC_PTS - 2];
+double e_approx[TOT_PTS][2];
 
-void quartCircAround(float *center) {
-    float init_angle = M_PI_2 / CIRC_PTS;
-    float angle = init_angle;
+void quartCircAround(double *center) {
+    double init_angle = M_PI_2 / CIRC_PTS;
+    double angle = init_angle;
     for (int i = 0; i < CIRC_PTS - 2; i++) {
         quart_circ[i][0] = center[0] + RAD * cos(angle);
         quart_circ[i][1] = center[1] + RAD * sin(angle);
@@ -19,17 +19,17 @@ void quartCircAround(float *center) {
     }
 }
 
-void getSlopes(float *center) {
+void getSlopes(double *center) {
     for (int i = 0; i < CIRC_PTS - 2; i++) {
         slopes[i] = (quart_circ[i][1] - center[1]) / (quart_circ[i][0] - center[0]);
     }
 }
 
-float *choosePt(void) {
-    float difference = fabs(slopes[0] - quart_circ[0][1]);
+double *choosePt(void) {
+    double difference = fabs(slopes[0] - quart_circ[0][1]);
     int index = 0;
     for (int i = 1; i < CIRC_PTS - 2; i++) {
-        float a = fabs(slopes[i] - quart_circ[i][1]);
+        double a = fabs(slopes[i] - quart_circ[i][1]);
         if (a < difference) {
             difference = a;
             index = i;
@@ -41,7 +41,7 @@ float *choosePt(void) {
 int main (void) {
     e_approx[0][0] = 0;
     e_approx[0][1] = 1;
-    float *point;
+    double *point;
     FILE *fp;
     fp = fopen("points.txt", "w+");
     // x, y, e^x, y - e^x, y^(1/x), y^(1/x) - e
