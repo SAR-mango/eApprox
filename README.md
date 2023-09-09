@@ -1,5 +1,7 @@
 # eApprox
-C program that approximates e and e^x. Examples TBA.
+C program that approximates e and e^x. Specifically, it generates a text file containing the approximations as well as some other interesting data. A python program then reads the data from the text file and graphs the results beautifully using Matplotlib. Here's what that looks like:
+
+<img src="img_3.png" width="300">
 
 # Algorithm: Basic Overview
 This program relies on the principle that the function e<sup>x</sup> is a graph of its own slope. That is, the derivative of e<sup>x</sup> is also e<sup>x</sup>.
