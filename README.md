@@ -15,3 +15,7 @@ With this in mind, the program's functions are broken down below:
 Here's what it looks like when points are generated around (0, 1):
 
 <img src="img_1.png" width="300">
+
+And here's what the process looks like when repeated. Note that the circles don't look entirely circular because the graph's scale is not perfectly even between both axes.
+
+<img src="img_2.png" width="300">
