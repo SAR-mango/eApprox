@@ -14,4 +14,4 @@ With this in mind, the program's functions are broken down below:
 
 Here's what it looks like when points are generated around (0, 1):
 
-<img src="https://github.com/SAR-mango/eApprox/blob/0e95b447df93c5f1ee3ecf1d49aabe671ce0fc6f/img_1.png" width="300">
+<img src="img_1.png" width="300">
