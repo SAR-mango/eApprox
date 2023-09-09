@@ -1,5 +1,5 @@
 # eApprox
-C program that approximates e and e^x. Specifically, it generates a text file containing the approximations as well as some other interesting data. A python program then reads the data from the text file and graphs the results beautifully using Matplotlib. Here's what that looks like:
+C program that approximates e and e<sup>x</sup>. Specifically, it generates a text file containing the approximations as well as some other interesting data. A python program then reads the data from the text file and graphs the results beautifully using Matplotlib. Here's what that looks like:
 
 <img src="img_3.png" height="600">
 
@@ -21,3 +21,5 @@ Here's what it looks like when points are generated around (0, 1):
 And here's what the process looks like when repeated. Note that the circles don't look entirely circular because the graph's scale is not perfectly even between both axes.
 
 <img src="img_2.png" width="300">
+
+# How the Code Works
