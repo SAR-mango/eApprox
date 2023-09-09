@@ -1,7 +1,7 @@
 # eApprox
 C program that approximates e and e^x. Specifically, it generates a text file containing the approximations as well as some other interesting data. A python program then reads the data from the text file and graphs the results beautifully using Matplotlib. Here's what that looks like:
 
-<img src="img_3.png" width="300">
+<img src="img_3.png" height="600">
 
 # Algorithm: Basic Overview
 This program relies on the principle that the function e<sup>x</sup> is a graph of its own slope. That is, the derivative of e<sup>x</sup> is also e<sup>x</sup>.
@@ -16,7 +16,7 @@ With this in mind, the program's functions are broken down below:
 
 Here's what it looks like when points are generated around (0, 1):
 
-<img src="img_1.png" height="600">
+<img src="img_1.png" width="300">
 
 And here's what the process looks like when repeated. Note that the circles don't look entirely circular because the graph's scale is not perfectly even between both axes.
 
