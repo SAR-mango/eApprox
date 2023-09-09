@@ -13,4 +13,4 @@ With this in mind, the program's functions are broken down below:
 5. Repeat the process around the point you selected rather than (0, 1).
 
 Here's what it looks like when points are generated around (0, 1):
-![Points generated along a quarter circle centered around (0, 1)](https://github.com/SAR-mango/eApprox/blob/0e95b447df93c5f1ee3ecf1d49aabe671ce0fc6f/img_1.png)
+![Points generated along a quarter circle centered around (0, 1)](https://github.com/SAR-mango/eApprox/blob/0e95b447df93c5f1ee3ecf1d49aabe671ce0fc6f/img_1.png = 300x)
