@@ -25,4 +25,10 @@ And here's what the process looks like when it is repeated. The circles don't lo
 Essentially, the program generates very small line segments between points, where the slope of each segment matches the y value of its right-side point as closely as possible. As an approximation for e<sup>x</sup>, this works surprisingly well. However, experimenting with the program and evaluating its performance will be left to the reader.
 
 # How the Code Works
-TBA
+I have left comments out of the code because it is – in my humble opinion – fairly easy to read and understand for those who want to challenge themselves. To make up for this, the entire program is documented in detail below. Comments will always be BELOW their respective code segments.
+
+```
+#include <stdio.h>
+#include <math.h>
+```
+Includes the necessary libraries. ``stdio.h`` (standard input/output) is needed for the program to prompt the user for parameters and for the user to enter the parameters. ``math.h`` (the math library) is needed for the ``fabs()`` (float absolute value) function. This allows the program to calculate the absolute value between decimal values.
