@@ -12,14 +12,15 @@ With this in mind, the program's functions are broken down below:
 2. Generate evenly-spaced points that fall along a quarter circle centered at (0, 1) with some given radius.
 3. Calculate the slope between each point you just generated and (0, 1).
 4. Select the point whose slope between itself and (0, 1) is closest to its y value. Save this point.
-5. Repeat the process around the point you selected rather than (0, 1). Calculate slopes between points on the new quarter circle and the point previously selected.
+5. Repeat the process around that point. Now, slopes are calculated between points on the new quarter circle and the point selected in the previous step.
 
-Here's what it looks like when points are generated around (0, 1). The orange line connects (0, 1) to the point that was selected:
+Here's what it looks like when points are generated around (0, 1). The orange line connects (0, 1) to the point that was selected.
 
 <img src="img_1.png" width="300">
 
-And here's what the process looks like when repeated. Note that the circles don't look entirely circular because the graph's scale is not perfectly even between both axes.
+And here's what the process looks like when it is repeated. The circles don't look entirely circular because the graph's scale is not perfectly even between both axes.
 
 <img src="img_2.png" width="300">
 
 # How the Code Works
+TBA
