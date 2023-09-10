@@ -22,5 +22,7 @@ And here's what the process looks like when it is repeated. The circles don't lo
 
 <img src="img_2.png" width="300">
 
+Essentially, the program generates very small line segments between points, where the slope of each segment matches the y value of its right-side point as closely as possible. As an approximation for e<sup>x</sup>, this works surprisingly well. However, experimenting with the program and evaluating its performance will be left to the reader.
+
 # How the Code Works
 TBA
