@@ -32,3 +32,21 @@ I have left comments out of the code because it is – in my humble opinion – 
 #include <math.h>
 ```
 Includes the necessary libraries. ``stdio.h`` (standard input/output) is needed for the program to prompt the user for parameters and for the user to enter the parameters. ``math.h`` (the math library) is needed for the ``fabs()`` (float absolute value) function. This allows the program to calculate the absolute value between decimal values.
+
+```
+struct point {
+    double x;
+    double y;
+};
+```
+Because the entire program deals with points, we might as well abstract them now into a ``struct``. A ``point`` object simply contains two decimal values: ``x`` and ``y``.
+
+```
+void init(int* CIRC_PTS, int* TOT_PTS, double* RAD);
+void quartCircAround(struct point quart_circ[], struct point* center, int* CIRC_PTS, double* RAD);
+void getSlopes(double slopes[], struct point quart_circ[], struct point* center, int* CIRC_PTS);
+struct point choosePoint(double slopes[], struct point quart_circ[], int* CIRC_PTS);
+```
+Prototypes (or declarations) for functions defined later. These will be explained in depth later.
+
+
