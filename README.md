@@ -49,4 +49,35 @@ struct point choosePoint(double slopes[], struct point quart_circ[], int* CIRC_P
 ```
 Prototypes (or declarations) for functions defined later. These will be explained in depth later.
 
+```
+int main(void) {
+    int CIRC_PTS = 100000;
+    int TOT_PTS = 1000;
+    double RAD = 0.01;
 
+    init(&CIRC_PTS, &TOT_PTS, &RAD);
+```
+We are now in the main() function. First, we initialize the three parameters – number of circle points, total number of points, and radius – to their default values. We then pass the addresses (indicated by the &) of these variables to the init() function, which is explained below.
+
+```
+void init(int* CIRC_PTS, int* TOT_PTS, double* RAD) {
+    printf("\n---eApprox: e and e^x approximator by Erk Sampat---\n\n");
+    printf("Enter the following parameters. Defaults will be used in the case of \"0\" or invalid entries.\n\n");
+```
+The init() function takes three arguments, all of which are pointers to the parameter variables in the main() function. First, init() prints the title of the program and some basic instructions. This is accomplished with simple ``printf()`` statements.
+
+```
+    printf("Enter a positive integer for the number of circle points (100,000 default): ");
+    int entry = 0;
+    if (!scanf("%d", &entry)) {
+        fflush(stdin);
+    }
+    if (entry > 0) {
+        *CIRC_PTS = entry;
+        printf("Number of circle points: %d\n\n", *CIRC_PTS);
+    }
+    else {
+        printf("Using default of %d.\n\n", *CIRC_PTS);
+    }
+```
+It then prompts the user to enter the number of circle points. It scans the user input, and if the user enters an integer, the value will be assigned to the variable ``entry``. ``scanf("%d", &entry)`` is responsible for this. ``%d`` tells it to look for decimal-value integers, and ``&entry`` is the address of ``entry``
