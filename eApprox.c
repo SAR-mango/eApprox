@@ -22,8 +22,8 @@ int main(void) {
     double slopes[CIRC_PTS - 2];
     struct point e_approx[TOT_PTS];
 
-    e_approx[0].x = 0;
-    e_approx[0].y = 1;
+    e_approx[0].x = 0.0;
+    e_approx[0].y = 1.0;
 
     FILE* fp;
     fp = fopen("points.txt", "w+");
@@ -90,7 +90,7 @@ void init(int* CIRC_PTS, int* TOT_PTS, double* RAD) {
 void quartCircAround(struct point quart_circ[], struct point* center, int* CIRC_PTS, double* RAD) {
     double init_angle = M_PI_2 / *CIRC_PTS;
     double angle = init_angle;
-    for (int i = 0; i < *CIRC_PTS - 2; i++) {
+    for (int i = 0; i < *CIRC_PTS - 2; i++) { // ignore horizontal and vertical lines, so CIRC_PTS - 2
         quart_circ[i].x = center->x + *RAD * cos(angle);
         quart_circ[i].y = center->y + *RAD * sin(angle);
         angle += init_angle;
