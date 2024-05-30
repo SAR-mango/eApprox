@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 
@@ -18,7 +19,7 @@ int main(void) {
 
     init(&CIRC_PTS, &TOT_PTS, &RAD);
 
-    struct point quart_circ[CIRC_PTS - 2];
+    struct point* quart_circ = malloc((CIRC_PTS - 2) * sizeof(struct point));
     double slopes[CIRC_PTS - 2];
     struct point e_approx[TOT_PTS];
 
@@ -39,6 +40,7 @@ int main(void) {
     }
 
     fclose(fp);
+    free(quart_circ);
 
     return 0;
 }
