@@ -93,7 +93,6 @@ void quartCircAround(struct point quart_circ[], struct point* center, int* CIRC_
     double init_angle = M_PI_2 / (*CIRC_PTS + 1); // we don't want 0 or pi/2, so this ensures that we get four angles between 0 and pi/2 (exclusive)
     double angle = init_angle;
     for (int i = 0; i < *CIRC_PTS; i++) {
-        printf("angle: %lf\n", angle);
         quart_circ[i].x = center->x + *RAD * cos(angle);
         quart_circ[i].y = center->y + *RAD * sin(angle);
         angle += init_angle;
