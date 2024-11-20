@@ -18,7 +18,7 @@ Here's what it looks like when points are generated around (0,1). The orange lin
 
 <img src="img_1.png" width="300">
 
-And here's what the process looks like when it is repeated. The quarter circles don't look circular because the graph isn't a perfect square.
+And here's what the process looks like when it is repeated. The quarter circles don't look very round because the graph isn't a perfect square, but the points are truly evenly spaced.
 
 <img src="img_2.png" width="300">
 
